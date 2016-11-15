@@ -1,0 +1,54 @@
+\section{Breve Descrição}
+
+O Administrador do sistema irá atender à demanda de pedidos realizados pelos clientes. Visualizando primeiramente, para então excluí-los ou marcando-os como concluídos.
+
+
+\section{Fluxo de Eventos}
+\subsection{Fluxo Básico}
+
+\begin{enumerate}
+	\item O usuário clica na aba "Gerenciar Pedidos"
+	\item O usuário visualiza os pedidos pendentes e os já concluídos
+	\item O caso de uso se encerra
+\end{enumerate}
+
+\subsection{Fluxo Alternativo}
+\subsubsection{Excluir Pedido}
+\begin{enumerate}
+	\item O usuário clica na aba "Gerenciar Pedidos"
+	\item O usuário visualiza os pedidos pendentes e os já concluídos
+	\item O usuário clica na opção excluir de um pedido pendente
+	\item O pedido é excluído
+	\item O caso de uso se encerra
+\end{enumerate}
+
+\subsubsection{Concluir Pedido}
+\begin{enumerate}
+	\item O usuário clica na aba "Gerenciar Pedidos"
+	\item O usuário visualiza os pedidos pendentes e os já concluídos
+	\item O usuário clica na opção concluir de um pedido pendente
+	\item O pedido é excluído da seção de pedidos pendentes e adicionado à seção de pedidos concluídos
+	\item O caso de uso se encerra
+\end{enumerate}
+
+\subsubsection{Visualizar Detalhes do Pedido}
+\begin{enumerate}
+	\item O usuário clica na aba "Gerenciar Pedidos"
+	\item O usuário visualiza os pedidos pendentes e os já concluídos
+	\item O usuário clica no nome de um pedido, pendente ou concluído
+	\item O usuário é redirecionado a uma página com os detalhes do pedido
+	\item Caso o usuário já tenha concluído o pedido, essa informação lhe é disponibilizada, caso contrário, lhe é disponibilizada as opções de excluir e concluir.
+	\item O caso de uso se encerra
+\end{enumerate}
+
+\section{Requisitos Especiais}
+
+Não se aplica
+
+\section{Condições Prévias}
+
+O usuário deve acessar o caminho da url específico para a parte de gerência
+
+\section{Condições Posteriores}
+
+Caso algum pedido seja concluídou ou excluído, essa mudança deve ser gravada no banco

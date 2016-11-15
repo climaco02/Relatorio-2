@@ -1,0 +1,276 @@
+\section{Introdução}
+\subsection{Propósito}
+
+Este documento tem a finalidade de descrever e organizar a visão geral acerca do sistema web a ser construído, esclarecendo suas características e necessidades.
+
+\subsection{Escopo}
+
+Este documento está vinculado à Clímacolândia que é uma empresa que realiza a confecção e vendas de produtos no ramo alimentício na categoria de doces. O site, além de trazer um sistema que proporciona interação padrão com usuários, trará também funcionalidades diretas aos funcionários da empresa, onde as principais características buscadas são, na parte de cliente, divulgação e descrição dos produtos, facilitação no contato cliente com a empresa, montagem individual de produto e ligação com redes sociais, na parte de empresa, maior organização de lucros, vendas, materiais em estoque e pedidos. 
+
+\subsection{Definições, acrônimos e abreviações}
+
+\begin{itemize}
+	\item trial: versão de um sistema que pode ser utilizada apenas por um período determinado de tempo
+\end{itemize}
+
+\subsection{Visão geral}
+
+Com base nas necessidades e no escopo descritos, a visão geral do projeto parte com o auxílio no entendimento das informações sobre posicionamento, usuários, envolvidos em geral, ambientes, requisitos, regras de negócio, restrições e principalmente o entendimento acerca do sistema em questão dando uma visão geral sobre ele e descrevendo os recursos, com isso, a equipe, desenvolvedores e cliente, passarão a ter uma visão em conjunto e igual sobre todo o projeto.
+
+\section{Posicionamento}
+\subsection{Oportunidade de Negócios}
+
+É evidente, até mesmo pelo observação que qualquer pessoa possa fazer no dia a dia acerca do que se vê nas ruas e nos diversos estabelecimentos, que a evolução tecnológica veio para causar grandes impactos de diferentes formas na sociedade, um deles é que “caso as empresas não acompanhem ou suplantem a escada da evolução científica tecnológica, os indivíduos tornam-se profissionalmente obsoletos, as empresas perdem competitividade e vão à falência” \cite{longo2007alguns}, com isso, veio a ideia de usar a própria tecnologia para solucionar os problemas da empresa em questão e de certa forma trazer essa evolução profissional.
+
+\subsection{Descrição do Problema}
+
+A descrição do problema se encontra na tabela \ref{tab:desc}.
+
+\begin{table}[!h]
+\centering
+\caption{Descrição do problema}
+\label{tab:desc}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|
+>{\columncolor[HTML]{C0C0C0}}l |l|}
+\hline
+O problema de & falta de organização de estoque, lucros, vendas e ausência da descrição dos produtos \\ \hline
+Afeta & mantenedores da empresa e clientes \\ \hline
+Cujo impacto é & perda no valor de lucros, de materiais estocados e na perda de clientes por falta de informação acerca dos produtos \\ \hline
+Uma boa solução seria & um sistema que automatiza o controle geral da empresa \\ \hline
+\end{tabular}%
+}
+\end{table}
+
+\subsection{Sentença de Posição do Produto}
+
+A sentença de posição do produto pode ser encontrada na tabela \ref{tab:posi}
+
+\begin{table}[!h]
+\centering
+\caption{Posicionamento do Produto}
+\label{tab:posi}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|
+>{\columncolor[HTML]{C0C0C0}}l |l|}
+\hline
+Para & a empresa Climacolândia \\ \hline
+Que & necessita da organização de seus recursos e finanças \\ \hline
+O & sistema web \\ \hline
+Que & organiza os recursos de estoque e as finanças \\ \hline
+Ao contrário & do TinyERP \cite{tinyerp} \\ \hline
+Nosso Produto & além de organizar finanças e recursos, traz também a parte de site para interação com clientes \\ \hline
+\end{tabular}%
+}
+\end{table}
+
+\section{Descrição dos Envolvidos e dos Usuários}
+\subsection{Resumo dos envolvidos}
+
+O resumo dos envolvidos se encontra na tabela \ref{tab:resenv}
+
+\begin{table}[!h]
+\centering
+\caption{Resumo dos envolvidos}
+\label{tab:resenv}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|l|l|}
+\hline
+\rowcolor[HTML]{9B9B9B} 
+Nome & Descrição & Responsabilidade \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+Desenvolvedores e Gestores & Alunos da disciplina de Requisitos de Software & Desenvolver o produto \\ \hline
+\cellcolor[HTML]{FFFFFF}Professor & Ministra a disciplina de Requisitos de Software & \cellcolor[HTML]{FFFFFF}Responsável por avaliar todo o processo de desenvolvimento do produto \\ \hline
+Cliente & Mantenedores da empresa & Descrever as necessidades e validar etapas do processo referentes às características do sistema \\ \hline
+\end{tabular}%
+}
+\end{table}
+
+
+\subsection{Resumo dos usuários}
+
+O resumo dos usuários se encontra na tabela \ref{tab:resusu}
+
+\begin{table}[H]
+\centering
+\caption{Resumo dos usuários}
+\label{tab:resusu}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|l|}
+\hline
+\rowcolor[HTML]{9B9B9B} 
+Nome & Descrição \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+Clientes & Qualquer pessoa que deseja realizar a compra do produto ou visualizar as informações acerca da empresa \\ \hline
+\cellcolor[HTML]{FFFFFF}Mantenedores & Donos da empresa \\ \hline
+\end{tabular}%
+}
+\end{table}
+
+
+\subsection{Ambiente do usuário}
+Os objetivos tomados pelos desenvolvedores e gestores para a realização do projeto, em questão de ambiente de usuário, serão baseados no livro “Design de Interação” \cite{rogers2013design} buscando atender as 10 heurísticas de Nielsen.
+
+\begin{enumerate}
+	\item Visibilidade do status do sistema: Manter o usuário informado, feedback
+	\item Compatibilidade do sistema com o mundo real: Linguagem do usuário -- palavras, frases e conceitos familiares 
+	\item Controle do usuário e liberdade: Saídas de emergência claras -- sair do estado indesejado sem ter que percorrer um extenso diálogo
+	\item Consistência e padrões: Evitar adivinhações - diferentes palavras, situações ou ações significam a mesma coisa?
+	\item Ajudar os usuários a reconhecer, diagnosticar e corrigir erros -- Linguagem clara para as mensagens -- Indicar o problema - Sugerir solução 
+	\item Prevenção de erros: Melhor que uma boa mensagem de erro é um design cuidadoso, que previne o erro antes que ele aconteça
+	\item Reconhecimento, em vez de memorização: O usuário não deve ter que lembrar da informação em diferentes partes do diálogo 
+	\item Flexibilidade e eficiência de uso: Usuários Novatos x Experientes -- Aceleradores aumentam a velocidade da interação para experientes – Permitir "corte de caminho" em ações frequentes 
+	\item Estética e design minimalista: Evitar informações irrelevantes ou raramente necessárias (exceto quando a segurança entrar em jogo – veja a apresentação sobre os desastres) -- Unidades de informação extras competem com unidades relevantes de informação - diminui sua visibilidade 
+	\item Ajuda e documentação: Embora seja melhor um sistema que possa ser usado sem documentação, é necessário prover ajuda (helps) e documentação
+\end{enumerate}
+
+É visada a criação de um produto implementado na forma de uma aplicação web onde dentro do site haverão dois ambientes distintos de usuário diferenciados pelo login realizado, um para usuários clientes da empresa e outro para os mantenedores da empresa.
+
+A aplicação possui poucas condições de restrições ambientais podendo ser acessada tanto em computadores, como em plataformas mobile (Tablets e Smartphones) e como o sistema estará hospedada em um servidor web, sua execução poderá ser realizada no Browser, onde qualquer um dos navegadores usados atualmente com suporte a HTML5 e CSS3: Google Chrome, Mozilla Firefox, etc.
+
+\subsection{Principais necessidades do Usuários e dos Envolvidos}
+\subsubsection{Clientes da empresa}
+
+As necessidades dos clientes da empresa podem ser encontrados na tabela \ref{tab:neccli}
+
+\begin{table}[!h]
+\centering
+\caption{Necessidades dos clientes da empresa}
+\label{tab:neccli}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+\rowcolor[HTML]{9B9B9B} 
+Id & Necessidade & Prioridade & Solução Atual & Solução Proposta \\ \hline
+NC01 & \cellcolor[HTML]{FFFFFF}Visualizar produtos disponíveis & \cellcolor[HTML]{FFFFFF}Alta & Visualizações periódicas por mídias sociais & \cellcolor[HTML]{FFFFFF}Disponibilizar o site para visualização completa dos produtos \\ \hline
+NC02 & Montar produto individual & Médio & Método informal via mídias sociais & Disponibilizar o site para montagem \\ \hline
+\end{tabular}%
+}
+\end{table}
+
+\subsubsection{Mantenedores}
+
+As necessidades dos mantenedores da empresa podem ser encontrados na tabela \ref{tab:necman}
+
+\begin{table}[!h]
+\centering
+\caption{Necessidades dos mantenedores da empresa}
+\label{tab:necman}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+\rowcolor[HTML]{9B9B9B} 
+Id & Necessidade & Prioridade & Solução Atual & Solução Proposta \\ \hline
+NC03 & \cellcolor[HTML]{FFFFFF}Ter o controle dos pedidos & \cellcolor[HTML]{FFFFFF}Alta & Feita em papel & \cellcolor[HTML]{FFFFFF}Sistema que tenha as informações de pedidos \\ \hline
+NC04 & Ter o controle das finanças & Alta & Feita em papel & Sistema que tenha as informações de finanças \\ \hline
+NC05 & Ter o controle do estoque & Médio & Feita em papel & Sistema que tenha as informações do estoque \\ \hline
+NC06 & Ter o controle de medidas de ingredientes & Baixo & Feita em papel & Sistema que permite calcular as medidas certas conforme um ingrediente base \\ \hline
+\end{tabular}%
+}
+\end{table}
+
+\subsection{Alternativas e Concorrência}
+
+\begin{itemize}
+	\item TinyERP: Sistema que auxilia no gerenciamento da empresa \cite{tinyerp}
+	\begin{itemize}
+		\item Pontos Fortes:
+		\begin{itemize}
+			\item Controle financeiro
+			\item Controle de estoque
+			\item Versão trial
+		\end{itemize}
+		\item Pontos Fracos:
+		\begin{itemize}
+			\item Sistema pago
+		\end{itemize}
+	\end{itemize}
+	\item Casa de Bolos: Empresa de bolos caseiros \cite{bolo}
+	\begin{itemize}
+		\item Pontos Fortes:
+		\begin{itemize}
+			\item Visualização de produtos e preços online
+			\item Direcionamento para locais de compra
+		\end{itemize}
+		\item Pontos Fracos:
+		\begin{itemize}
+			\item Não possui lojas no DF
+		\end{itemize}
+	\end{itemize}
+\end{itemize}
+
+\section{Visão geral do produto}
+\subsection{Perspectiva do produto}
+
+No projeto em questão, será tudo disponibilizado e atualizado a partir de ações feitas pelos próprios mantenedores, tanto as informações contidas no sistema direcionadas ao clientes da empresa Climacolândia quanto as referentes aos controles gerais.
+
+O usuário com acesso de comprador terá fácil visualização dos produtos, contato e montagem de suas próprias demandas e o usuário com acesso de administrador terá fácil acesso aos campos de atualização dos números da empresa e simples visualização do montante das informações.
+
+\subsection{Suposições e Dependências}
+
+Para que o software continue transmitindo e acompanhando os dados corretamente, é necessário que os donos da empresa sempre estejam atualizando seus produtos e supostas modificações de contato e que também sempre mantenham atualizados no sistema seus gastos, lucros, estoque etc.
+
+\section{Recursos do produto}
+
+\begin{itemize}
+	\item Visualização dos produtos
+	\item Contato cliente - empresa
+	\item Montagem de produto
+	\item Gerência de pedidos
+	\item Controle de estoque
+	\item Controle de gastos com ingrediente
+	\item Controle de finanças
+\end{itemize}
+
+\section{Requisitos}
+\subsection{Requisitos Funcionais}
+
+O requisitos funcionais do produto se encontram na tabela \ref{tab:reqfun}
+
+\begin{table}[!h]
+\centering
+\caption{Requisitos Funcionais}
+\label{tab:reqfun}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|l|l|}
+\hline
+\rowcolor[HTML]{9B9B9B} 
+Id & Descrição & Prioridade \\ \hline
+RF01 & \cellcolor[HTML]{FFFFFF}Mostrar produtos online & \cellcolor[HTML]{FFFFFF}Alta \\ \hline
+RF02 & Controle de finanças & Alta \\ \hline
+RF03 & Controle de estoque & Alta \\ \hline
+RF04 & Mostrar contato com a empresa & Média \\ \hline
+RF05 & Gerenciar pedidos online & Média \\ \hline
+RF06 & Montar produto online & Média \\ \hline
+RF07 & Não finalizar encomenda & Média \\ \hline
+RF08 & Controle de ingredientes em produção & Baixa \\ \hline
+\end{tabular}%
+}
+\end{table}
+
+
+\subsection{Requisitos Não-Funcionais}
+
+O requisitos não-funcionais do produto se encontram na tabela \ref{tab:reqnfun}
+
+\begin{table}[!h]
+\centering
+\caption{My caption}
+\label{tab:reqnfun}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|l|l|}
+\hline
+\rowcolor[HTML]{9B9B9B} 
+Id & Descrição & Prioridade \\ \hline
+RNF01 & \cellcolor[HTML]{FFFFFF}Integração com o Facebook & \cellcolor[HTML]{FFFFFF}Alta \\ \hline
+RNF02 & Arquitetura MTV & Alta \\ \hline
+RNF03 & Unidades internacionais para cálculos & Alta \\ \hline
+\end{tabular}%
+}
+\end{table}
+
+\section{Outros Requisitos do Produto}
+
+O sistema poderá ser acessado e usado em qualquer navegador web, onde dentro da aplicação, o usuário poderá ser direcionado a sua página desejada em no máximo 3 cliques respeitando assim as regras de usabilidade. Serão respeitados todas as práticas de segurança e confiabilidade em que as informações disponibilizadas pelos clientes jamais serão publicadas para terceiros.
+
+O produto traz a garantia de informações atualizadas e pedidos confirmados para os clientes da empresa por meio de mensagens e datas de últimas atualizações feitas no site. Para os mantenedores, a veracidade dos dados mostrados dependerão sempre do comprometimento deles mesmos, guardando sempre as informações necessárias para o andamento correto das aplicações do sistema.

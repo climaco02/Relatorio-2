@@ -1,0 +1,48 @@
+\section{Breve Descrição}
+
+Este caso de uso é utilizado pelo cliente para fazer a encomenda de um produto. No entanto, a finalização do pedido deve ser feito diretamente com o mantenedor via telefone
+
+
+\section{Fluxo de Eventos}
+\subsection{Fluxo Básico}
+
+\begin{enumerate}
+	\item O caso de uso se inicia quando o cliente acessa o site da empresa
+	\item O cliente seleciona a seção de encomendar produtos
+	\item O cliente seleciona as características gerais do produto desejado (e.g. Bolo, bombom, alfajor)
+	\item O cliente descreve as características específicas do produto desejado (e.g. Cobertura, sabor, recheio)
+	\item O cliente clica no botão de enviar
+	\item O cliente é redirecionado para uma página que deve lhe orientar a finalizar o pedido via telefone
+	\item O caso de uso se encerra
+\end{enumerate}
+
+\subsection{Fluxo Alternativo}
+\subsubsection{Cancelar pedido}
+\begin{enumerate}
+	\item O caso de uso se inicia quando o cliente acessa o site da empresa
+	\item O cliente seleciona a seção de encomendar produtos
+	\item O cliente sai da página
+	\item O caso de uso se encerra
+\end{enumerate}
+
+\subsubsection{Formulário em branco}
+\begin{enumerate}
+	\item O caso de uso se inicia quando o cliente acessa o site da empresa
+	\item O cliente seleciona a seção de encomendar produtos
+	\item O cliente tenta submeter o formulário sem prencher algum dos campos
+	\item O sistema deve impedir a submissão e exigir a entrada dos dados
+	\item Ou o cliente muda de página ou preenche os dados corretamente
+	\item O caso de uso se encerra
+\end{enumerate}
+
+\section{Requisitos Especiais}
+
+As informações do pedido não podem ser nulas
+
+\section{Condições Prévias}
+
+Não se aplica
+
+\section{Condições Posteriores}
+
+O pedido, caso feito da maneira correta, deve ser enviado para o banco de dados
